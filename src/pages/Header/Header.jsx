@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo/elite-typo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
+    const { logOut, user } = useContext(AuthContext);
+    const handelSingOut = () => {
+        logOut()
+            .then(() => {
+
+            })
+            .catch((error) => console.log(error))
+    };
     return (
         <div className="sticky top-0 z-50">
             <div className="navbar bg-[#02071a] mb-5">
@@ -42,12 +52,12 @@ const Header = () => {
                             <Link to={'/allToys'}>AllToys</Link>
                         </li>
                         <li className="mr-5"><Link to={'/myToys'}>MyToys</Link></li>
-                        <li className="mr-5"><Link to={'/addToys'}>AddToys</Link></li>
+                        {user && <li className="mr-5"><Link to={'/addToys'}>AddToys</Link></li>}
                         <li className=""><Link to={'/blogs'}>Blogs</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end mr-5 text-white">
-                    <Link className="bg-red-600 pt-1 pb-2 pl-5 pr-5 rounded-2xl hover:bg-red-400" to={'/login'}>Login</Link>
+                    {user? <><button className="bg-red-600 pt-1 pb-[6px] pl-4 pr-4 rounded-2xl hover:bg-red-400" onClick={handelSingOut}>SingOut</button></> :<><Link className="bg-red-600 pt-1 pb-2 pl-5 pr-5 rounded-2xl hover:bg-red-400" to={'/login'}>Login</Link></>}
                 </div>
             </div>
         </div>

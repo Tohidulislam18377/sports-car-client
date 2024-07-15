@@ -6,13 +6,18 @@ import img3 from '../../assets/images/banner/Image-03.jpg'
 import img4 from '../../assets/images/banner/Image-04.jpg'
 import img5 from '../../assets/images/banner/Image-05.jpg'
 import img6 from '../../assets/images/banner/Image-06.jpg'
+import img11 from '../../assets/images/cars/meticulous_di_1.webp'
+import img12 from '../../assets/images/cars/meticulous_di_3.webp'
+import img13 from '../../assets/images/cars/Mix1800 (1).webp'
 import img7 from '../../assets/images/cars/sports_car_crafted_with_pre_0.webp'
 import img8 from '../../assets/images/cars/sports_car_rendered_in_exquisite_1 (1).webp'
 import img9 from '../../assets/images/cars/sports_car_rendered_in_exquisite_2 (1).webp'
 import img10 from '../../assets/images/cars/sports_car_rendered_in_stunn_0 (1).webp'
+import useTitle from '../../UseTitle/UseTitle'
 
 
 const Home = () => {
+    useTitle("Home")
     return (
         <div className="ml-5 mr-5">
             <div className="carousel w-full mb-5">
@@ -24,7 +29,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Unleash <br /> the Beast <br /> Within</h2>
                             <p className='mb-3'>Experience the ultimate fusion of raw power and sophisticated engineering. Sports cars bring a new level of excitement with their roaring engines and lightning-fast acceleration.</p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -41,7 +46,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Pure <br /> Adrenaline<br /> Pure You.</h2>
                             <p className='mb-3'>Sports cars are masterpieces of design and engineering, built to deliver an unparalleled driving experience. Every curve and contour is meticulously sculpted to reduce drag and enhance performance. </p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -58,7 +63,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Feel the <br />Thrill of <br /> the Road.</h2>
                             <p className='mb-3'>Elevate your driving to new heights with a sports car that embodies the pinnacle of automotive performance. These vehicles are engineered with precision and passion, featuring high-performance engines.</p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -75,7 +80,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Pure <br /> Adrenaline <br />Pure Power.</h2>
                             <p className='mb-3'>Step into a sports car and enter a world where innovation meets exhilaration. These vehicles are at the forefront of automotive technology, incorporating the latest advancements to enhance performance and safety. </p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -92,7 +97,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Elegance <br /> Meets <br /> Raw Power</h2>
                             <p className='mb-3'>Theres nothing quite like the thrill of driving a sports car. With their powerful engines, precise handling, and stunning designs, sports cars offer a driving experience that is second to none. Feel the rush of acceleration.</p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -109,7 +114,7 @@ const Home = () => {
                         <div className='text-white w-1/2'>
                             <h2 className='text-6xl font-bold mb-2'>Master <br /> the Road <br /> with Style</h2>
                             <p className='mb-3'>Sports cars redefine performance, offering a driving experience that is both thrilling and refined. With their powerful engines, advanced suspension systems.</p>
-                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Discover Fast</button>
+                            <button className="hover:bg-red-400 p-2 rounded bg-red-600 mr-4">Book Now</button>
                             <Link to={'/blogs'}><button className=" p-2 rounded hover:bg-red-400 bg-red-600 mr-4">Blog Red</button></Link>
                         </div>
                     </div>
@@ -120,7 +125,7 @@ const Home = () => {
                 </div>
             </div>
             <Marquee>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-5 mb-5'>
                     <div>
                         <img className='rounded h-48 ml-3' src={img7} alt="" />
                         <p className='text-1xl text-center text-black'>Feel pure power</p>
@@ -137,9 +142,34 @@ const Home = () => {
                         <img className='rounded h-48' src={img10} alt="" />
                         <p className='text-1xl text-center text-black'>Ultimate craftsmanship</p>
                     </div>
+                    <div>
+                        <img className='rounded h-48' src={img11} alt="" />
+                        <p className='text-1xl text-center text-black'>Red Hot Racer</p>
+                    </div>
+                    <div>
+                        <img className='rounded h-48' src={img12} alt="" />
+                        <p className='text-1xl text-center text-black'>Firebolt Flyer</p>
+                    </div>
                 </div>
             </Marquee>
-
+            <div className='text-center mb-10'>
+                <p className='text-3xl font-medium'>Sub Category</p>
+                <p className='text-1xl mb-5'>Designed for the Bold Unmatched Speed, Unstoppable Performance</p>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 text-center gap-2'>
+                    <Link to={'/subSportsCar'} className='p-2  rounded-2xl border-solid border-2 border-[#e61414]'>Sports Car</Link>
+                    <Link to={'/miniPolice'} className='rounded-2xl p-2 border-solid border-2 border-[#e61414]'>Mini police truck</Link>
+                    <Link to={'/miniFireTruck'} className='rounded-2xl p-2 border-solid border-2 border-[#e61414]'>Mini Fire Truck</Link>
+                </div>
+            </div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-5'>
+                <div>
+                <img className='h-[520px] w-full rounded-3xl' src={img13} alt="" />
+                </div>
+                <div className='text-center mt-28'>
+                    <p className='text-5xl font-bold mb-4'>Speedster Falcon</p>
+                    <p className=' text-2xl pl-20 w-[400px]'>The Speedster Falcon boasts a sleek, aerodynamic design that maximizes speed and efficiency. With its advanced engineering, <span className='text-red-600'>this car offers a thrilling driving experience</span>, perfect for those who crave adrenaline and performance on the open road.</p>
+                </div>
+            </div>
         </div>
     );
 };
